@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone, MessageCircle, CalendarCheck, MapPin, Mail, Activity, Wind, Droplet, Sparkles, Stethoscope } from "lucide-react";
+import { Menu, X, Phone, MessageCircle, CalendarCheck, MapPin, Mail, Activity, Wind, Droplet, Sparkles, Stethoscope, type LucideIcon } from "lucide-react";
 import { useSite } from "@/lib/site";
 import { waLink } from "@/lib/format";
 import { Spinner } from "@/components/ui";
 
-export const AREA_ICONS: Record<string, React.ComponentType<{ size?: number; className?: string; strokeWidth?: number }>> = {
+export const AREA_ICONS: Record<string, LucideIcon> = {
   activity: Activity, wind: Wind, droplet: Droplet, sparkles: Sparkles,
 };
 export const AreaIcon = ({ name, size = 22, className = "" }: { name?: string | null; size?: number; className?: string }) => {
