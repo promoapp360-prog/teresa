@@ -18,7 +18,7 @@ build = ["sh", "-c", "npm install --include=dev && npm run build"]
 run = ["sh", "-c", "npm start"]
 
 [workflows]
-runButton = "Avvia Studio della Volpe"
+runButton = "Project"
 
 [[workflows.workflow]]
 name = "Avvia Studio della Volpe"
@@ -29,3 +29,15 @@ mode = "sequential"
 task = "shell.exec"
 args = "npm install && npm run dev"
 waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Avvia Studio della Volpe"
