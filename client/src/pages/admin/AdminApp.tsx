@@ -38,7 +38,7 @@ function Login() {
     <div className="flex min-h-screen items-center justify-center bg-brand-cream px-4">
       <form onSubmit={submit} className="card w-full max-w-sm space-y-4">
         <div className="text-center">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-brand-deep/30 font-display text-2xl text-brand-deep">TV</div>
+          <img src="/logo-studio.webp" alt="Studio Medico Dott.ssa Teresa della Volpe" width={1024} height={1024} className="mx-auto h-40 w-40 object-contain" />
           <h1 className="mt-3 text-3xl">Area riservata</h1>
           <p className="text-sm text-slate-500">Studio Dott.ssa Teresa della Volpe</p>
         </div>
@@ -109,7 +109,7 @@ function Shell({ children }: { children: React.ReactNode }) {
   const side = (
     <nav className="flex h-full flex-col gap-1 p-4">
       <div className="mb-4 flex items-center gap-3 px-2">
-        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 font-display text-lg text-white">TV</span>
+        <img src="/emblema-studio.webp" alt="" width={40} height={40} className="h-10 w-10 shrink-0 rounded-lg object-contain" />
         <div className="leading-tight"><div className="font-display text-lg text-white">Studio della Volpe</div><div className="text-[10px] uppercase tracking-widest text-white/60">Gestionale</div></div>
       </div>
       {items.map((n) => (

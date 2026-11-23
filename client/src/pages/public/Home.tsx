@@ -10,9 +10,8 @@ export function DoctorPortrait({ className = "" }: { className?: string }) {
   const s = site!.settings;
   if (s.doctor.photoUrl) return <img src={s.doctor.photoUrl} alt={s.studio.doctorName} className={`h-full w-full object-cover ${className}`} />;
   return (
-    <div className={`flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-brand-deep to-brand-sage text-white ${className}`}>
-      <span className="font-display text-7xl italic">T.d.V.</span>
-      <span className="mt-3 text-[11px] font-bold uppercase tracking-[0.3em] text-white/70">{s.studio.doctorTitle}</span>
+    <div className={`flex h-full w-full items-center justify-center bg-white p-4 ${className}`}>
+      <img src="/logo-studio.webp" alt={`Logo dello Studio Medico ${s.studio.doctorName}`} width={1024} height={1024} className="h-full w-full object-contain" />
     </div>
   );
 }
