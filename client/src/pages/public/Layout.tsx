@@ -98,7 +98,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
             <div className="flex flex-wrap gap-4">
               <Link href="/privacy" className="hover:text-white">Privacy</Link>
               <Link href="/cookie" className="hover:text-white">Cookie</Link>
-              <a href="/admin" className="hover:text-white">Area riservata</a>
+              <a href="/admin" className="hover:text-white">Admin</a>
               <span>Realizzato da PromoApp</span>
             </div>
           </div>
