@@ -4,3 +4,6 @@ backups
 .env
 *.log
 .DS_Store
+.local/
+.agents/
+.conversation/

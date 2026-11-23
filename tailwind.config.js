@@ -15,8 +15,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Manrope", "system-ui", "sans-serif"],
-        display: ["'Cormorant Garamond'", "Georgia", "serif"],
+        sans: ["Poppins", "system-ui", "sans-serif"],
+        display: ["Poppins", "system-ui", "sans-serif"],
       },
       boxShadow: { soft: "0 10px 30px -14px rgba(22,48,45,.28)" },
     },
