@@ -18,7 +18,13 @@ export function Logo({ light = false }: { light?: boolean }) {
   const name = site?.settings.studio.doctorName || "Dott.ssa Teresa della Volpe";
   return (
     <Link href="/" className="group flex items-center gap-3">
-      <img src="/emblema-studio.webp" alt="" width={56} height={56} className="h-14 w-14 shrink-0 rounded-lg object-contain" />
+      <img
+        src={light ? "/emblema-studio.webp" : "/sagoma-donna.png"}
+        alt=""
+        width={light ? 56 : 34}
+        height={light ? 56 : 64}
+        className={light ? "h-14 w-14 shrink-0 rounded-lg object-contain" : "h-16 w-auto shrink-0 object-contain"}
+      />
       <span className="leading-tight">
         <span className={`block font-display text-xl font-semibold ${light ? "text-white" : "text-brand-deep"}`}>{name}</span>
         <span className={`block text-[10px] font-bold uppercase tracking-[0.22em] ${light ? "text-white/70" : "text-brand-bronze"}`}>Studio medico</span>
