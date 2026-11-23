@@ -90,6 +90,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
             <div className="eyebrow text-brand-sand">Specializzazioni</div>
             {site.categories.map((c) => <Link key={c.id} href={`/${c.slug}`} className="block hover:text-white">{c.name}</Link>)}
             <Link href="/prestazioni" className="block hover:text-white">Tutte le prestazioni</Link>
+            <a href="/admin" className="block hover:text-white">Admin</a>
           </div>
         </div>
         <div className="border-t border-white/10">
@@ -98,7 +99,6 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
             <div className="flex flex-wrap gap-4">
               <Link href="/privacy" className="hover:text-white">Privacy</Link>
               <Link href="/cookie" className="hover:text-white">Cookie</Link>
-              <a href="/admin" className="hover:text-white">Admin</a>
               <span>Realizzato da PromoApp</span>
             </div>
           </div>
