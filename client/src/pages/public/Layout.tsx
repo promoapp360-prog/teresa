@@ -65,6 +65,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
             <div className="wrap flex flex-col py-3">
               {nav.map((n) => <Link key={n.href} href={n.href} className="border-b border-brand-sand/40 py-3 font-semibold text-brand-deep">{n.label}</Link>)}
               <Link href="/prestazioni" className="border-b border-brand-sand/40 py-3 font-semibold text-brand-deep">Tutte le prestazioni</Link>
+              <a href="/admin" className="border-b border-brand-sand/40 py-3 font-semibold text-brand-deep">Admin</a>
               <Link href="/prenota" className="btn-primary mt-4"><CalendarCheck size={16} /> Prenota una visita</Link>
             </div>
           </nav>
@@ -90,7 +91,6 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
             <div className="eyebrow text-brand-sand">Specializzazioni</div>
             {site.categories.map((c) => <Link key={c.id} href={`/${c.slug}`} className="block hover:text-white">{c.name}</Link>)}
             <Link href="/prestazioni" className="block hover:text-white">Tutte le prestazioni</Link>
-            <a href="/admin" className="block hover:text-white">Admin</a>
           </div>
         </div>
         <div className="border-t border-white/10">
